@@ -56,6 +56,11 @@ $color5: rgb(118,120,130);
     font-size: 1rem;
   }
 }
+/*============== fleche ==================*/
+.fleche{
+  @include absolute_div(250px,580px,none,none);
+  width: 181px;
+}
 /*========= ROW2 =========*/
 .div_row2 {
   @extend %div_row;
@@ -139,7 +144,6 @@ button{
 .div_row2_col2{
   @extend %div_col;
   align-items: flex-start;
-  justify-content: space-between;
 
   h3{
     font-size: 2rem;
@@ -153,7 +157,7 @@ button{
   .div_row {
     @extend %div_row;
     .btn_next_step {
-      @include absolute_div(none,20px,20px,none);
+      @include absolute_div(none,40px,20px,none);
       border-radius: 50%;
       font-size: 2rem;
       color: $color3;
