@@ -1,0 +1,122 @@
+/*========================== PLACEHOLDERS ===========================*/
+%div_row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+%div_col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*============================ VARIABLES ============================*/
+$color1: black;
+$color2: rgb(205,230,147);
+$color3: rgb(254,247,238);
+$color4: white;
+$color5: rgb(118,120,130);
+/*====================== SECTION =====================*/
+section{
+  margin-top: 150px;
+}
+.div_text{
+  @extend %div_row;
+  align-items: flex-start;
+  padding: 30px 50px;
+  border-radius: 50px;
+  box-shadow: 0 0 1px $color1;
+
+  img{
+    border-radius: 20px;
+  }
+  .texte{
+    @extend %div_col;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left: 20px;
+    width: 60%;
+  }
+}
+.div_text .texte{
+  h1{
+    @extend %div_row;
+    justify-content: space-between;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  .hr{
+    height: 0px;
+    margin: 10px 0;
+    border-bottom: 2px solid $color1;
+    width: 100%;
+  }
+}
+.follow{
+  margin-top: 20px;
+  @extend %div_row;
+  justify-content: space-around;
+  gap: 10px;
+  a{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+}
+/*============== fire ==========*/
+.wrapper {
+  margin-left: 10px;
+  position: relative;
+  top: 20px;
+  animation: movement 20ms ease-in infinite;
+}
+
+.red {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 69, 0, 0.7);
+  box-shadow: 0px 0px 10px 5px rgba(255, 69, 0, 0.7);
+}
+
+.gold {
+  left: 9px;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 215, 0, 0.7);
+  box-shadow: 0px 0px 9px 4px rgba(255, 215, 0, 0.7);
+}
+
+.white {
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 224, 0.7);
+  box-shadow: 0px 0px 9px 4px rgba(255, 255, 224, 0.7);
+}
+
+.flame {
+  bottom: 0;
+  position: absolute;
+  border-radius: 50% 0% 50% 50%;
+  transform: rotate(-45deg);
+}
+/*---------- fire animation ---------*/
+@keyframes movement {
+  0% {
+    transform: rotate(-1deg);
+  }
+  20% {
+    transform: rotate(2deg) scaleY(1.05);
+  }
+  40% {
+    transform: rotate(-1deg);
+  }
+  60% {
+    transform: rotate(1deg);
+  }
+  80% {
+    transform: rotate(-1deg) scaleY(0.9);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}
