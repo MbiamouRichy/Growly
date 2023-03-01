@@ -44,6 +44,7 @@ main{
           font-weight: 600;
           cursor: pointer;
           color: $color;
+          font-size: 1rem;
         }
       }
     }
@@ -66,4 +67,5 @@ header button{
   padding: 15px 30px;
   font-weight: 600;
   border: 1px solid $color2;
+  font-size: 1rem;
 }

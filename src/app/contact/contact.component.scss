@@ -24,8 +24,10 @@ $color5: rgb(118,120,130);
   bottom: $bottom;
   left: $left;
 }
+
 /*======================== SECTION2 =================================*/
-/*================================== ROW2 ============================*/
+
+/*============ ROW1 ============*/
 .div_row1{
   margin-top: 60px;
   @extend %div_row;
@@ -40,7 +42,8 @@ $color5: rgb(118,120,130);
   @extend %div_row;
   justify-content: space-around;
   border-radius: 70px;
-  border: 1px solid $color;
+  background: linear-gradient(90deg, $color4, $color3);
+  box-shadow: 0 0 1px $color;
   padding: 10px 30px;
   height: 190px;
   img{
@@ -51,30 +54,37 @@ $color5: rgb(118,120,130);
   }
   p {
     font-size: 1rem;
-    text-transform: uppercase;
   }
 }
-/*================================== ROW2 ============================*/
+/*========= ROW2 =========*/
 .div_row2 {
   @extend %div_row;
-  justify-content: space-around;
+  justify-content: space-between;
   .div_row2_col1{
     @extend %div_col;
     gap: 10px;
   }
 }
+/*----------- col1 ------------*/
+
 .div_row2_col1 .div_link_1{
   @extend %div_row;
   justify-content: space-between;
-  padding: 20px 30px;
+  padding: 20px 50px;
   background: linear-gradient(135deg, $color4, $color3);
   border-radius: 70px;
+  box-shadow: 0 0 1px $color;
   .div_row{
     @extend %div_row;
     gap: 20px;
   }
   .image2{
     margin-left: 70px;
+  }
+  .texte{
+    @extend %div_col;
+    align-items: flex-start;
+    gap: 5px;
   }
 }
 button{
@@ -83,14 +93,17 @@ button{
   padding: 15px 30px;
   font-weight: 600;
   border: 1px solid $color2;
+  font-size: 1rem;
 }
 .div_row2_col1 .div_link_2{
   @extend %div_col;
   justify-content: space-between;
   padding: 20px;
   background: linear-gradient(135deg, $color4, $color3);
-  border-radius: 70px;
+  border-radius: 50px;
   gap: 20px;
+  box-shadow: 0 0 2px $color;
+
   .div_link_2_1, .card_text{
     @extend %div_row;
     justify-content: space-between;
@@ -102,7 +115,7 @@ button{
 }
 .div_link_2{
   .card_text{
-    h3{
+    h3, p{
       font-weight: 600;
     }
     p{
@@ -121,4 +134,41 @@ button{
   .color2{
     background: rgb(192,215,255);
   }
+}
+/*-------------- col2 ---------*/
+.div_row2_col2{
+  @extend %div_col;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  h3{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1.17rem;
+    color: $color5;
+  }
+}
+.div_row2_col2{
+  .div_row {
+    @extend %div_row;
+    .btn_next_step {
+      @include absolute_div(none,20px,20px,none);
+      border-radius: 50%;
+      font-size: 2rem;
+      color: $color3;
+      background: $color2;
+      width: 250px;
+      height: 250px;
+      border: 20px solid $color3;
+      cursor: pointer;
+      box-shadow: 0 0 1px $color;
+
+    }
+  }
+}
+/*--------- bottom image ------------*/
+.image_bottom{
+  @include absolute_div(none,0,0,0);
+  margin: 0 auto;
 }
