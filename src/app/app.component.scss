@@ -9,11 +9,6 @@ $color3: rgb(254,247,238);
   flex-direction: row;
   align-items: center;
 }
-%div_col{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 /*========================== MIXIN =================================*/
 @mixin absolute_div($top,$right,$bottom,$left){
   position: absolute;
@@ -32,18 +27,24 @@ main{
 }
 /*============================== HEADER =============================*/
 /*==================================================================*/
+
+
 main{
   header{
     @extend %div_row;
     justify-content: space-between;
     nav ul{
-     @extend %div_row;
+      @extend %div_row;
       list-style: none;
       li{
         position: relative;
         margin: 0 20px;
-        font-weight: 600;
-        cursor: pointer;
+        a{
+          text-decoration: none;
+          font-weight: 600;
+          cursor: pointer;
+          color: $color;
+        }
       }
     }
   }
@@ -65,113 +66,4 @@ header button{
   padding: 15px 30px;
   font-weight: 600;
   border: 1px solid $color2;
-}
-
-/*============================== SECTION1 ================================*/
-.section_div1{
-  position: relative;
-  width: 100%;
-  .div_img{
-    @include absolute_div(-50px,none,none,0);
-  }
-}
-.div_texte1{
-  @include absolute_div(20px,30px,none,none);
-  @extend %div_row;
-  justify-content: space-around;
-  h1{
-    font-size: 11rem;
-  }
-  img{
-    height: 100%;
-  }
-
-}
-.div_texte2{
-  .h2_div_texte2{
-    @include absolute_div(190px,42px,none,none);
-    font-size: 4.5rem;
-    font-weight: 300;
-  }
-}
-.div_texte2_div1{
-  @include absolute_div(200px,0,none,none);
-  @extend %div_row;
-  .link_img{
-    @extend %div_row;
-    justify-content: space-around;
-    border-radius: 70px;
-    border: 1px solid $color;
-    padding: 20px 30px;
-    p{
-      font-weight: 600;
-      font-size: 1.2rem;
-      text-transform: uppercase;
-    }
-  }
-}
-.div_texte2_div1 .div_texte2_div1_div2{
-  @extend %div_col;
-  align-items: flex-start;
-
-  h1{
-    font-size: 11rem;
-    font-weight: 600;
-  }
-  p{
-    position: relative;
-    top: -50px;
-    font-size: 4.5rem;
-    font-weight: 300;
-  }
-}
-/*================================ SECTION2 ================================*/
-.section_div2 {
-  @include absolute_div(none,none,100px,0);
-  @extend %div_row;
-  align-items: flex-end;
-  width: 100%;
-  padding-left: 70px;
-  .link_img-card1{ // link image card bank
-    @extend %div_row;
-    width: 50%;
-    gap: 20px;
-    justify-content: space-around;
-    background: $color3;
-    border-radius: 70px;
-    padding: 20px 30px;
-  }
-}
-.link_img-card1 .card_texte {
-  p{
-    margin: 10px 0;
-  }
-  .p_color2{
-    color: $color2;
-  }
-}
-.link_img_card2 {
-  width: 40%;
-  position: relative;
-  margin-left: 20px;
-  .link_img {
-    @extend %div_row;
-    justify-content: space-around;
-    border-radius: 70px;
-    border: 1px solid $color;
-    padding: 20px 30px;
-    height: 130px;
-
-    img{
-      position: relative;
-      top: 0px;
-      right: -60px;
-      width: 176px;
-    }
-    p {
-      font-weight: 600;
-      font-size: 1.2rem;
-      text-transform: uppercase;
-    }
-  }
 }
