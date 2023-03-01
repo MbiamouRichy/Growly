@@ -204,6 +204,9 @@ $color3: rgb(254,247,238);
   .div_texte1 {
     top: 50px;
     right: -10px;
+    h1{
+      font-size: 5.5rem;
+    }
   }
   .div_texte2 .h2_div_texte2 {
     top: 190px;
@@ -211,16 +214,27 @@ $color3: rgb(254,247,238);
   }
   .div_texte2_div1 {
     top: 200px;
-  }
-  .div_texte2_div1 .link_img{
-    img{
-      width: 50%;
+    .link_img{
+      padding: 0 20px;
+
+      img{
+        width: 50%;
+      }
     }
   }
+  .div_texte2_div1 .div_texte2_div1_div2 p {
+    font-size: 3.5rem;
+    top: -30px;
+  }
   .section_div1 .div_img{
-    top: 0;
+    top: -20px;
+    left: -20px;
     img{
       width: 80%;
     }
+  }
+  .section_div2{
+    padding: 0;
+    left: 20px;
   }
 }
