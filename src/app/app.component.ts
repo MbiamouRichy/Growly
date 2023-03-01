@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Growly';
+
+  ngOnInit(){
+    let nav = document.querySelectorAll('nav li');
+    nav.forEach(a=>a.addEventListener('click', ()=>{
+      nav.forEach(a=>a.classList.remove('active'));
+      a.className +=' active';
+    }))
+  }
 }

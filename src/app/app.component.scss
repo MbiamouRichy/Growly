@@ -58,9 +58,10 @@ nav ul li::before{
   height: 2px;
   transition: width 0.5s ease;
 }
-nav ul li:hover::before{
+nav ul li:hover::before, nav ul .active::before{
   width: 100%;
 }
+
 header button{
   background: $color2;
   border-radius: 50px;

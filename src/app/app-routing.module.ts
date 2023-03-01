@@ -4,6 +4,7 @@ import {HomeComponent} from "./home/home.component";
 import {ContactComponent} from "./contact/contact.component";
 import {PlanComponent} from "./plan/plan.component";
 import {AboutComponent} from "./about/about.component";
+
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'courses', component: ContactComponent},
