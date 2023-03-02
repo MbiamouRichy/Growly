@@ -132,7 +132,27 @@ $color3: rgb(254,247,238);
   }
 }
 /*======================== RESPONSIVE ========================*/
-@media only screen and (min-width: 1120px) and (max-width: 1288px) {
+@media only screen and (min-width: 1370px) and (max-width: 1440px) {
+  .div_texte2_div1 .div_texte2_div1_div2, .div_texte1 {
+    h1 {
+      font-size: 12rem;
+    }
+  }
+  .div_texte2 .h2_div_texte2, .div_texte2_div1 .div_texte2_div1_div2 p{
+    font-size: 5rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1266px) {
+  .div_texte2_div1 .div_texte2_div1_div2, .div_texte1 {
+    h1 {
+      font-size: 9.8rem;
+    }
+  }
+  .div_texte2_div1 .link_img p{
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1120px) and (max-width: 1200px) {
   .div_texte2_div1 .div_texte2_div1_div2, .div_texte1 {
     h1 {
       font-size: 9rem;

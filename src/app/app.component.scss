@@ -70,12 +70,114 @@ header button{
   border: 1px solid $color2;
   font-size: 1rem;
 }
-/*======================== RESPONSIVE ======================*/
-@media only screen and (min-width: 768px) and (max-width: 976px) {
-  main{
-    padding: 20px 5px;
+/*--- btn hamburger ---------*/
+.btn_menu_hamburger{
+  @include absolute_div(10x,50px,none,none);
+  display: none;
+  z-index: 60;
+}
+.bar{
+  position: relative;
+  z-index: 60;
+  width: 28px;
+  height: 3px;
+  padding: 0;
+  background-color: $color;
+  transition: all 0.5s ease;
+  margin: 20px;
+}
+.bar::before, .bar::after{
+  content: "";
+  @include absolute_div(10px,none,none,0);
+  z-index: 70;
+  width: 28px;
+  height: 3px;
+  background-color: $color;
+  transition: all 0.5s ease;
+}
+.bar::after{
+  top: -10px;
+}
+.active{
+  .bar{
+    height: 3px;
+    background: transparent;
   }
-  header button{
-    padding: 10px;
+  .bar::before{
+    top: 5px;
+    transform: rotate(-45deg);
+  }
+  .bar::after{
+    top: 5px;
+    transform: rotate(45deg);
+  }
+}
+nav .mobile{
+  display: none;
+}
+/*======================== RESPONSIVE ======================*/
+@media only screen and (max-width: 800px) {
+  main{
+    padding: 20px 10px;
+  }
+
+}
+@media only screen and (max-width: 767px) {
+  main header {
+    nav{
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 50;
+      height: 100vh;
+      width: 100%;
+      display: none;
+      flex-direction: row-reverse;
+      background: rgba(245, 222, 179, 0.5);
+      animation: nav 0.5s ease-in forwards;
+      ul{
+        width: auto;
+        height: 100%;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        background: wheat;
+        gap: 20px;
+        animation: ul 0.5s ease-in forwards;
+        animation-delay: 0.5s;
+
+        li a{
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
+  header .desktop{
+    position: relative;
+    left: -90px;
+  }
+  .btn_menu_hamburger{
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header .desktop{
+    display: none;
+  }
+  nav .mobile{
+    display: block;
+  }
+}
+/*====================== ANIMATION NAV =====================*/
+@keyframes nav {
+  from{
+    top: -1000px;
+  }
+  to{
+    top: 0;
   }
 }
