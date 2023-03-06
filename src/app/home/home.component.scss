@@ -273,7 +273,7 @@ section{
     left: 20px;
   }
 }
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 750px) {
 
   .section_div1 .div_img {
     display: none;
@@ -326,6 +326,61 @@ section{
   }
   .link_img_card2 .link_img  img{
     right: 0;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 750px) {
+  .div_texte2_div1 .div_texte2_div1_div2, .div_texte1 {
+    h1 {
+      font-size:7rem;
+    }
+  }
+  .div_texte2_div1_div2, .div_texte2 .h2_div_texte2 {
+    font-size: 5rem;
+  }
+  .link_img-card1 .card_texte {
+    h3 {
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 24px;
+    }
+  }
+  .div_texte2_div1 {
+    top: 260px;
+  }
+  .section_div2 {
+    bottom: -80%;
+  }
+}
+@media only screen and (min-width: 506px) and (max-width: 600px) {
+  .div_texte2 .h2_div_texte2 {
+    font-size: 4rem;
+  }
+  .link_img-card1 .card_texte {
+    h3 {
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 24px;
+    }
+  }
+  .div_texte2_div1 {
+    top: 250px;
+  }
+  .section_div2 {
+    bottom: -60%;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 506px) {
+  .div_texte2_div1 .div_texte2_div1_div2, .div_texte1 {
+    h1 {
+      font-size: 5.5rem;
+    }
+  }
+  .div_texte2 .h2_div_texte2 {
+    font-size: 3.5rem;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 425px){
