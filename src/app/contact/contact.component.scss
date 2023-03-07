@@ -23,7 +23,7 @@ $color5: rgb(118,120,130);
   bottom: $bottom;
   left: $left;
 }
-/*=========================== CONTACT =================================*/
+/*=========================== COURSES =================================*/
 
 /*============ ROW1 ============*/
 .div_row1{
@@ -174,4 +174,71 @@ button{
 .image_bottom{
   @include absolute_div(none,0,0,200px);
   margin: 0 auto;
+}
+/*========================== RESPONSIVE ===================================*/
+@media only screen and (max-width: 1252px) {
+  .fleche {
+    top: 260px;
+    right: 460px;
+    transform: rotate(-5deg);
+  }
+}
+@media only screen and (max-width: 1151px) {
+  .div_row1 .title {
+    font-size: 2.5rem;
+  }
+  .div_row1 .link_image{
+    padding: 10px;
+    img{
+      left: -20px;
+    }
+  }
+  .div_row2_col1 .div_link_1 {
+    .texte {
+      h3, p, button {
+        font-size: 1rem;
+      }
+    }
+    .image2{
+      margin-left: 10px;
+    }
+  }
+  .div_link_2 .card_text{
+    p, h3 {
+      font-size: 1rem;
+    }
+  }
+
+  .div_row2_col2 {
+    .div_row {
+      .btn_next_step {
+        width: 200px;
+        height: 200px;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1047px) {
+  .div_row1 .link_image{
+    padding: 10px 5px;
+    img{
+      left: -10px;
+    }
+  }
+  .fleche {
+    top: 260px;
+    right: 440px;
+  }
+  .div_link_2 .bg-img {
+    margin-left: 0px;
+  }
+  .div_row2_col1 .div_link_1 {
+    .image2{
+      margin-left: 0px;
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  
 }
