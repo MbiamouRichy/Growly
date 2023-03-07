@@ -240,5 +240,130 @@ button{
   }
 }
 @media only screen and (max-width: 1000px) {
-  
+  .fleche{
+    display: none;
+  }
+  .div_row1 .title {
+    font-size: 2rem;
+  }
+  .div_row1 .link_image{
+    padding: 0 10px 0 0;
+    img{
+      left: -5px;
+    }
+  }
+  .div_row2_col2 {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+}
+@media only screen and (max-width: 920px) {
+  .div_row1 {
+    margin-bottom: 20px;
+    .title {
+      font-size: 1.5rem;
+    }
+  }
+  .div_row2_col2 {
+    .div_row {
+      .btn_next_step {
+        bottom: 10px;
+        right: 10px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 880px) {
+  .image_bottom {
+    bottom: -70px;
+    left: 0px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .div_row1 .link_image, .div_row2 {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .div_row1 {
+    justify-content: space-around;
+    .title{
+      font-size: 3.5rem;
+    }
+    .link_image {
+      height: auto;
+      align-items: center;
+      padding: 20px;
+    }
+
+  }
+  .div_row2_col2{
+    margin-left: 0;
+    h3{
+      font-size: 3rem;
+    }
+    p{
+      font-size: 2rem;
+    }
+    .div_row {
+      .btn_next_step {
+        bottom: -300px;
+        right: 20px;
+        width: 150px;
+        height: 150px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .image_bottom {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .div_row1 {
+
+    .title {
+      font-size: 2.5rem;
+    }
+  }
+  .div_row2_col2 {
+    h3 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+@media only screen and (max-width: 490px) {
+  .div_row1, .div_row2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .div_row1 .link_image {
+    width: 90%;
+  }
+
+  .div_row2_col1 {
+    align-items: center;
+    .div_link_1, .div_link_2 .div_link_2_1{
+     flex-direction: column;
+      width: 90%;
+   }
+
+  }
+  .div_row2_col2 .div_row {
+    .btn_next_step {
+      bottom: -850px;
+    }
+  }
+}
+@media only screen and (max-width: 408px) {
+  .div_row2_col2 .div_row {
+    .btn_next_step {
+      bottom: -950px;
+    }
+  }
 }
