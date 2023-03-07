@@ -367,3 +367,10 @@ button{
     }
   }
 }
+@media only screen and (max-width: 307px) {
+  .div_row2_col2 .div_row {
+    .btn_next_step {
+      bottom: -1050px;
+    }
+  }
+}
