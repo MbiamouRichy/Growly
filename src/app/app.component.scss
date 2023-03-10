@@ -124,7 +124,6 @@ nav .mobile{
 
 }
 @media only screen and (max-width: 767px) {
-
   header{
     nav {
       position: absolute;
@@ -136,14 +135,14 @@ nav .mobile{
       display: none;
       background: rgba(245, 222, 179, 0.5);
       animation: nav 0.5s ease-in forwards;
-      ul {
+      ul{
         width: auto;
         height: 100%;
         padding: 0 30px;
         display: flex;
-        flex-direction: column!important;
-        align-items: flex-start!important;
-        justify-content: center!important;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
         background: #FEF7EEFF;
         gap: 20px;
 
