@@ -125,8 +125,7 @@ nav .mobile{
 }
 @media only screen and (max-width: 767px) {
 
-  header{
-    nav {
+  header nav {
       position: absolute;
       top: 0;
       right: 0;
@@ -137,7 +136,6 @@ nav .mobile{
       flex-direction: row;
       background: rgba(245, 222, 179, 0.5);
       animation: nav 0.5s ease-in forwards;
-
       ul {
         width: auto;
         height: 100%;
@@ -153,7 +151,6 @@ nav .mobile{
           font-size: 2rem;
         }
       }
-    }
   }
   header .desktop{
     position: relative;
