@@ -60,7 +60,7 @@ nav ul li::before{
   transition: width 0.5s ease;
 }
 nav ul li:hover::before, nav ul .active::before{
-  width: 50%;
+  width: 100%;
 }
 
 header button{
@@ -124,8 +124,7 @@ nav .mobile{
 
 }
 @media only screen and (max-width: 767px) {
-  header{
-    nav {
+  header nav {
       position: absolute;
       top: 0;
       right: 0;
@@ -135,11 +134,11 @@ nav .mobile{
       display: none;
       background: rgba(245, 222, 179, 0.5);
       animation: nav 0.5s ease-in forwards;
-      ul{
+    }
+     header nav ul{
         width: auto;
         height: 100%;
         padding: 0 30px;
-        display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
@@ -149,9 +148,7 @@ nav .mobile{
         li a {
           font-size: 2rem;
         }
-      }
-    }
-  }
+     }
   header .desktop{
     position: relative;
     left: -90px;
