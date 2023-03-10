@@ -17,6 +17,10 @@ $color4: white;
 $color5: rgb(118,120,130);
 /*====================== ABOUT =====================*/
 section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   margin-top: 150px;
 }
 .div_text{
@@ -28,6 +32,8 @@ section{
 
   img{
     border-radius: 20px;
+    width: 399px;
+    height: 399px;
   }
   .texte{
     @extend %div_col;
@@ -118,5 +124,32 @@ section{
   }
   100% {
     transform: rotate(1deg);
+  }
+}
+/*=================================== RESPONSIVE ================================*/
+/*================================================================================*/
+@media only screen and (max-width: 966px) {
+  section{
+    margin: 50px 0;
+  }
+  .div_text{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: unset;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 399px;
+    img{
+      border-radius: unset;
+    }
+    .texte{
+      margin: unset;
+      width: 100%;
+      padding: 20px;
+      h1{
+        font-size: 5rem;
+      }
+    }
   }
 }
