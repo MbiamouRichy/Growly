@@ -14,24 +14,19 @@ export class AppComponent {
       nav.forEach(a=>a.classList.remove('active'));
       a.className +=' active';
     }));
-    let btn_hamburger = document.querySelector('.btn_menu_hamburger');
-    // @ts-ignore
+    let btn_hamburger = document.querySelector('.btn_menu_hamburger') as HTMLButtonElement;
     btn_hamburger.addEventListener('click', () =>{
-      let navbar_mobile = document.querySelector('header nav');
-      // @ts-ignore
+      let navbar_mobile = document.querySelector('header nav') as HTMLMenuElement;
+      let main = document.querySelector('main') as HTMLElement;
       if ( navbar_mobile.style.display=='flex'){
-        // @ts-ignore
         btn_hamburger.classList.remove('active')
-        document.body.style.overflow="auto"
-        // @ts-ignore
+        main.style.overflow="auto"
         navbar_mobile.style.display="none";
-        document.body.style.userSelect='none'
+        main.style.userSelect='none'
       }else{
-        document.body.style.overflow="hidden"
-        document.body.style.userSelect='auto';
-        // @ts-ignore
+        main.style.overflow="hidden"
+        main.style.userSelect='auto';
         navbar_mobile.style.display='flex'
-        // @ts-ignore
         btn_hamburger.classList.add('active')
       }
     })
