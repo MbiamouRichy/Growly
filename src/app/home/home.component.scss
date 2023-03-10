@@ -402,3 +402,28 @@ section{
     }
   }
 }
+@media only screen and (max-height: 832px) {
+  .section_div2{
+    bottom: -60%;
+  }
+}
+@media only screen and (max-height: 799px) {
+  .section_div2{
+    bottom: -70%;
+  }
+}
+@media only screen and (max-height: 746px) {
+  .section_div2{
+    bottom: -80%;
+  }
+}
+@media only screen and (max-height: 703px) {
+  .section_div2{
+    bottom: -90%;
+  }
+}
+@media only screen and (max-height: 666px) {
+  .section_div2{
+    bottom: -110%;
+  }
+}

@@ -22,7 +22,7 @@ $color3: rgb(254,247,238);
 main{
   position: absolute;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   background-image: $main-color;
   padding: 20px 70px;
   overflow-x: hidden;
@@ -150,7 +150,7 @@ nav .mobile{
           gap: 20px;
 
           li a {
-            font-size: 3rem;
+            font-size: 2rem;
           }
         }
       }
@@ -172,7 +172,7 @@ nav .mobile{
   }
   nav .mobile{
     display: block;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 20px 30px;
   }
 
