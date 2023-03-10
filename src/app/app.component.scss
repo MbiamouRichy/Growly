@@ -60,7 +60,7 @@ nav ul li::before{
   transition: width 0.5s ease;
 }
 nav ul li:hover::before, nav ul .active::before{
-  width: 100%;
+  width: 50%;
 }
 
 header button{
@@ -141,9 +141,9 @@ nav .mobile{
         height: 100%;
         padding: 0 30px;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+        flex-direction: column!important;
+        align-items: flex-start!important;
+        justify-content: center!important;
         background: #FEF7EEFF;
         gap: 20px;
 

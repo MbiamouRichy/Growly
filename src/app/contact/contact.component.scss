@@ -168,6 +168,11 @@ button{
       box-shadow: 0 0 1px $color;
 
     }
+    .btn_next_step:active{
+      color: $color2;
+      background: $color3;
+      border-color: $color2;
+    }
   }
 }
 /*--------- bottom image ------------*/
