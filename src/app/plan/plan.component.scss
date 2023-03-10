@@ -92,8 +92,7 @@ $color5: rgb(118,120,130);
   }
 }
 .div_row1 .plan_chat{
-  position: relative;
-  right: -70px;
+ @include absolute_div(none,4%,none,none);
 }
 /*------------ Fleche --------------*/
 .fleche{
@@ -110,6 +109,7 @@ $color5: rgb(118,120,130);
   .h1{
     font-size: 6rem;
     font-weight: 600;
+    line-height: 110%;
   }
   .div_col{
     @extend %div_col;
@@ -148,5 +148,75 @@ $color5: rgb(118,120,130);
         text-transform: uppercase;
       }
     }
+  }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1440px) {
+.div_row2{
+  .h1{
+    font-size: 6.5rem;
+  }
+}
+  .fleche{
+    left: 550px;
+  }
+}
+@media only screen and (max-width: 1264px) {
+  .div_row2{
+    .h1{
+      font-size: 5rem;
+    }
+  }
+  .fleche{
+    left: 450px;
+  }
+}
+@media only screen and (max-width: 1236px) {
+  .div_row1 .div_col .text {
+    font-size: 1.5rem;
+  }
+  .div_col .div_video {
+    p, h3 {
+      font-size: 1rem;
+    }
+    button{
+      font-size: 0.8rem;
+    }
+  }
+}
+@media only screen and (max-width: 1159px){
+  .div_row2{
+    .h1{
+      font-size: 4rem;
+    }
+    .div_col .h3 {
+      font-size: 1rem;
+    }
+  }
+  .fleche{
+    left: 350px;
+  }
+  .div_row1 .plan_chat{
+    width: 40%;
+    right: 3%;
+  }
+}
+@media only screen and (max-width: 989px) {
+  .div_row2 {
+    .h1{
+      font-size: 3rem;
+    }
+    .div_col .link_image {
+      img {
+        width: 78px;
+      }
+      .texte p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .fleche{
+    left: 320px;
+    width: 10%;
+    top: 20px;
   }
 }
