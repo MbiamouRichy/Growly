@@ -127,7 +127,7 @@ nav .mobile{
 @media only screen and (max-width: 767px) {
   header nav {
     position: absolute;
-    top: 0;
+    top: -1000px;
     right: 0;
     z-index: 50;
     height: 100vh;
@@ -158,6 +158,13 @@ nav .mobile{
     display: block;
     right: 0;
   }
+  /*====================== ANIMATION NAV =====================*/
+  @keyframes nav {
+    to{
+      top: 0;
+    }
+  }
+
 }
 @media only screen and (max-width: 600px) {
   header .desktop{
@@ -169,13 +176,4 @@ nav .mobile{
     padding: 20px 30px;
   }
 
-}
-/*====================== ANIMATION NAV =====================*/
-@keyframes nav {
-  from{
-    top: -1000px;
-  }
-  to{
-    top: 0;
-  }
 }
