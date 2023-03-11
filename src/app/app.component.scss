@@ -135,20 +135,7 @@ nav .mobile{
       background: rgba(245, 222, 179, 0.5);
       animation: nav 0.5s ease-in forwards;
     }
-     header nav ul{
-        width: auto;
-        height: 100%;
-        padding: 0 30px;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        background: #FEF7EEFF;
-        gap: 20px;
 
-        li a {
-          font-size: 2rem;
-        }
-     }
   header .desktop{
     position: relative;
     left: -90px;
