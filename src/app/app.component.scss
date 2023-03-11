@@ -134,13 +134,11 @@ nav .mobile{
       width: 100%;
       display: none;
       background: rgba(245, 222, 179, 0.5);
-      animation: nav 0.5s ease-in forwards;
     }
   header nav ul{
     width: auto;
     height: 100%;
     padding: 0 30px;
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
