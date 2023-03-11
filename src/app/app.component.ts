@@ -20,7 +20,7 @@ export class AppComponent {
       let main = document.querySelector('main') as HTMLElement;
       if ( navbar_mobile.style.display=='flex'){
         btn_hamburger.classList.remove('active')
-        main.style.overflow="auto"
+        main.style.overflowY="auto"
         navbar_mobile.style.display="none";
         main.style.userSelect='none'
       }else{
